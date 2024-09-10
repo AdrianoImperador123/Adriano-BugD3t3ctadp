@@ -1,0 +1,90 @@
+/* Cores e fontes principais */
+:root {
+    --cor-fundo: #1a1a1a;
+    --cor-texto: #f1f1f1;
+    --cor-accent: #167BF7;
+    --cor-rodape: #333333;
+    --cor-borda: #444444;
+    --fonte-principal: 'Arial', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 2em;
+    background-color: var(--cor-rodape);
+    border-bottom: 3px solid var(--cor-borda);
+}
+
+h1 {
+    font-size: 32px;
+    color: var(--cor-accent);
+}
+
+p {
+    font-size: 18px;
+}
+
+.container {
+    flex: 1;
+    padding: 20px;
+}
+
+.welcome-section {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.video-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.video {
+    background-color: var(--cor-rodape);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    border: 2px solid var(--cor-borda);
+}
+
+h2, h3 {
+    color: var(--cor-accent);
+}
+
+video {
+    width: 100%;
+    max-width: 500px;
+    border: 2px solid var(--cor-accent);
+    border-radius: 5px;
+}
+
+footer {
+    background-color: var(--cor-rodape);
+    padding: 10px;
+    text-align: center;
+    color: var(--cor-texto);
+    border-top: 3px solid var(--cor-borda);
+}
+
+footer p {
+    font-size: 14px;
+}
